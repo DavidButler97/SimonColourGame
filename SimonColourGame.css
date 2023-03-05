@@ -1,0 +1,119 @@
+body 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button 
+        {
+            font-family: 'Orbitron', sans-serif;
+            font-size: xx-large;
+        }
+        
+      #circle-container 
+      {
+        margin-top: 0px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        justify-content: center;
+      }
+
+      .big-circle 
+      {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        background: black;
+        position: absolute; /* absolute position allows us to use methods like top,left,right and bottom to move our elements around */
+        top: -50px;
+        left: -30px;
+        text-align: center;
+        
+      }
+
+      .medium-circle 
+      {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        background: black;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .small-circle
+      {
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        filter: brightness(70%);
+
+      }
+      .tinyIndicator
+      {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        background: red;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*  position, top , left and transform to ensure our indicator is dead centre */
+      }
+
+        /* 4 instances of medium circles to put the small circles into */
+      #topLeftMedium-circle 
+      {
+        top: -110px;
+        left: -120px;
+      }
+
+      #bottomLeftMedium-circle 
+      {
+        top: 150px;
+        left: -120px;
+      }
+
+      #topRightMedium-circle 
+      {
+        top: -110px;
+        left: 205px;
+      }
+
+      #bottomRightMedium-circle 
+      {
+        top: 150px;
+        left: 205px;
+      }
+
+
+      /* 4 instances of small circles */
+      #topLeftSmall-circle 
+      {
+        background-color: green;
+      }
+
+       #bottomLeftSmall-circle 
+      {
+        background-color: yellow;
+      }
+
+      #topRightSmall-circle 
+      {
+        background-color: red;
+      }
+
+      #bottomRightSmall-circle 
+      {
+        background-color: blue;
+      }

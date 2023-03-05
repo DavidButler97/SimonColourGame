@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="SimonColourGame.css">
+  </head>
+  <body>
+    <centre> 
+        
+        <div id="circle-container">
+
+            <div class="big-circle"> <!-- big circle that holds the highscore, start button, and previousscore-->
+                <br><br><br><br><br><br><br>
+                <button id="highscore">00</button> <!-- Where the count for highscore is held-->
+                <button id="start" onclick="startButton()">START</button>  <!-- Start button that initiates the game-->
+                <button id="level" >00</button>  <!-- Where the count for the previous game is held-->
+                <div class="tinyIndicator" id="tinyIndicator"> </div>
+            </div>
+            <!-- The four medium circles and the coloured circles within them-->
+            <div class="medium-circle" 
+            id="topLeftMedium-circle" >
+
+                <button class="small-circle" 
+                id="topLeftSmall-circle" 
+                type="button" 
+                onmousedown="topLeftGlow()" 
+                onmouseup="topLeftDim()" 
+                ></button>
+            </div>
+            <div class="medium-circle" 
+            id="bottomLeftMedium-circle">
+
+                <button class="small-circle" 
+                id="bottomLeftSmall-circle" 
+                type="button" 
+                onmousedown="bottomLeftGlow()" 
+                onmouseup="bottomLeftDim()">
+              </button>
+            </div>
+            <div class="medium-circle" id="topRightMedium-circle">
+                <button class="small-circle" id="topRightSmall-circle" type="button" onmousedown="topRightGlow()" onmouseup="topRightDim()"></button>
+            </div>
+            <div class="medium-circle" id="bottomRightMedium-circle">
+                <button class="small-circle" id="bottomRightSmall-circle" type="button" onmousedown="bottomRightGlow()" onmouseup="bottomRightDim()"></button>
+            </div>
+        </div>
+    </centre>
+    <script src="SimonColourGame.js"></script>
+  </body>
+</html>
